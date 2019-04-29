@@ -9,7 +9,8 @@
 #include "Chooser.hpp"
 #include "Guesser.hpp"
 
-namespace bullpgia {
+namespace bullpgia
+{
 	/**
 	 * Run a game of bull-pgia.
 	 * @param chooser the player who chooses the secret string.

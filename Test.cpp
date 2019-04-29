@@ -21,7 +21,7 @@ using namespace bullpgia;
 int main() {
 
 	badkan::TestCase testcase;
-	int grade=0;
+	int grade = 0;
 	int signal = setjmp(badkan::longjmp_buffer);
 	if (signal == 0) {
 
@@ -44,8 +44,8 @@ int main() {
 		testcase.setname("Play with smart guesser");
 		RandomChooser randy;
 		SmartGuesser smarty;
-		for (uint i=0; i<100; ++i) {
-			testcase.CHECK_EQUAL(play(randy, smarty, 4, 100)<=100, true);  // smarty should always win in at most 10 turns!
+		for (uint i = 0; i < 100; ++i) {
+			testcase.CHECK_EQUAL(play(randy, smarty, 4, 100) <= 100, true);  // smarty should always win in at most 10 turns!
 		}
 
     grade = testcase.grade();

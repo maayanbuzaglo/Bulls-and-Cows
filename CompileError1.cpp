@@ -4,7 +4,6 @@
  * @since  2019-04
  */
 
-
 #include <iostream>
 using namespace std;
 
@@ -13,6 +12,7 @@ using namespace std;
 #include "DummyGuessers.hpp"
 using namespace bullpgia;
 
-int main() {
+int main()
+{
 	Chooser c;
 }

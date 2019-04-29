@@ -5,11 +5,17 @@ using std::string;
 /**
  * ConstantChooser is a chooser that always chooses the same string. 
  */
-class ConstantChooser: public bullpgia::Chooser {
-		string myConstantString;
+class ConstantChooser: public bullpgia::Chooser
+{
+	string myConstantString;
+
 	public:
-		ConstantChooser(const string& constantString) { myConstantString = constantString; }
-		string choose(uint length) override {
+		ConstantChooser(const string& constantString)
+		{
+			myConstantString = constantString;
+		}
+		string choose(uint length) override
+		{
 			return myConstantString;
 		}
 };
@@ -17,7 +23,8 @@ class ConstantChooser: public bullpgia::Chooser {
 /**
  * RandomChooser is a chooser that chooses a random string.
  */
-class RandomChooser: public bullpgia::Chooser {
+class RandomChooser: public bullpgia::Chooser
+{
 		string choose(uint length) override;
 };
 
