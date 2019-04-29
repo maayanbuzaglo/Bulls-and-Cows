@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+using namespace std;
 using std::string;
 
 namespace bullpgia
@@ -11,11 +12,12 @@ namespace bullpgia
         string guessCode;
         uint length;
 
-        Guesser(string);
-        Guesser();
-        virtual string guess();
-        virtual void startNewGame(uint length);
-        virtual void learn(string replay);
+        virtual string guess() = 0;
+        virtual void startNewGame(uint length)
+        {
+            this->length = length;
+        };
+        virtual void learn(string replay){};
     };
-  
+
 }
