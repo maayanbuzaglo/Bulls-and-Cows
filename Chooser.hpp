@@ -8,12 +8,6 @@ namespace bullpgia
     class Chooser
     {
     public:
-        string chose;
-        uint length;
-
-        Chooser(string);
-        Chooser();
         virtual string choose(uint length);
     };
-  
 }

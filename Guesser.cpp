@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "Guesser.hpp"
 using std::string;
 
 namespace bullpgia
@@ -13,4 +14,19 @@ namespace bullpgia
     {
         return "";
     }  
+
+    string guess()
+    {
+        return "";
+    }
+
+    void startNewGame(uint length)
+    {
+
+    }
+    
+    void learn(string replay)
+    {
+
+    }
 }

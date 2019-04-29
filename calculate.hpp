@@ -1,9 +1,10 @@
 #pragma once
 #include <string>
 #include <iostream>
-using std::string;
+using namespace std;
 
 namespace bullpgia
 {
-string calculateBullAndPgia(string code, string codeGuess);
+    class calculate{};
+    string calculateBullAndPgia(string choice,string guess);
 }

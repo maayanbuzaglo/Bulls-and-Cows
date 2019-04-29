@@ -14,8 +14,8 @@ namespace bullpgia
         Guesser(string);
         Guesser();
         virtual string guess();
-        void startNewGame(uint length);
-        void learn(string guessCode);
+        virtual void startNewGame(uint length);
+        virtual void learn(string replay);
     };
   
 }
