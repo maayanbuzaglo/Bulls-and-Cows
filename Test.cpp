@@ -49,6 +49,24 @@ int main() {
 			testcase.CHECK_EQUAL(play(randy, smarty, 4, 100) <= 100, true);  // smarty should always win in at most 10 turns!
 		}
 
+
+		// Our test
+		testcase.setname("Calculate bull and pgia")
+		.CHECK_OUTPUT(calculateBullAndPgia("1111","1212"), "2,0")      // 2 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("1212","2121"), "0,4")      // 0 bull, 4 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("1111","1111"), "4,0")      // 4 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("1111","3456"), "0,0")      // 0 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("1111","1212"), "2,0")      // 2 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("3674","8462"), "0,2")      // 0 bull, 2 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("3674","4773"), "1,1")      // 1 bull, 1 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("732846","123456"), "1,3")      // 1 bull, 3 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("23476","26437"), "2,3")      // 2 bull, 3 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("4424","2344"), "1,2")      // 1 bull, 2 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("3452","3456"), "3,0")      // 3 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("3568","5381"), "0,3")      // 0 bull, 3 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("0000","0000"), "4,0")      // 4 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("2386","1212"), "2,0") ;     // 2 bull, 0 pgia
+
     grade = testcase.grade();
 	} else {
 		testcase.print_signal(signal);

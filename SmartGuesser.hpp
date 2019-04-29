@@ -8,7 +8,7 @@ namespace bullpgia
 {
 	class SmartGuesser: public bullpgia::Guesser
 	{
-		string myConstantString;
+		string guessCode;
 		
 		public:
 	
@@ -16,6 +16,6 @@ namespace bullpgia
 		{
 
 		}
-		string guess();
+		string guess() override;
 	};
 }
