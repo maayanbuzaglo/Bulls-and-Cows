@@ -65,7 +65,14 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("3452","3456"), "3,0")      // 3 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("3568","5381"), "0,3")      // 0 bull, 3 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("0000","0000"), "4,0")      // 4 bull, 0 pgia
-		.CHECK_OUTPUT(calculateBullAndPgia("2386","1212"), "2,0") ;     // 2 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("2386","1212"), "2,0")      // 2 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("872993","629743"), "1,3")      // 1 bull, 3 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("81364","18436"), "0,5")      // 0 bull, 5 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("81364","81364"), "5,0")      // 5 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("64321010","61910297"), "1,4")      // 1 bull, 4 pgia
+		;
+
+
 
     grade = testcase.grade();
 	} else {
