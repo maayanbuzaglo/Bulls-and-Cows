@@ -1,5 +1,6 @@
 #pragma once
 #include "Guesser.hpp"
+#include "calculate.hpp"
 
 /**
  * ConstantGuesser is a guesser that always guesses the same string. 
