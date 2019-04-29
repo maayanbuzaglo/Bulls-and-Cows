@@ -3,7 +3,7 @@
 using std::string;
 
 /**
- * ConstantChooser is a chooser that always chooses the same string. 
+ * ConstantChooser is a chooser that always chooses the same string.
  */
 class ConstantChooser: public bullpgia::Chooser
 {

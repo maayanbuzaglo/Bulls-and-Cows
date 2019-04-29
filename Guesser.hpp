@@ -1,7 +1,5 @@
 #pragma once
-#include <string>
 #include <iostream>
-using namespace std;
 using std::string;
 
 namespace bullpgia
@@ -17,7 +15,10 @@ namespace bullpgia
         {
             this->length = length;
         };
-        virtual void learn(string replay){};
+        virtual void learn(string replay)
+        {
+            
+        };
     };
 
 }

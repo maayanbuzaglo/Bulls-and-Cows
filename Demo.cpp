@@ -5,7 +5,6 @@
  * @since  2019-04
  */
 
-
 #include <iostream>
 using namespace std;
 
