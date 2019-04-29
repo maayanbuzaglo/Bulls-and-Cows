@@ -70,6 +70,15 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("81364","18436"), "0,5")      // 0 bull, 5 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("81364","81364"), "5,0")      // 5 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("64321010","61910297"), "1,4")      // 1 bull, 4 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("21","11"), "1,0")      //1 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("123","321"), "1,2")      // 1 bull, 2 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("6374","6336"), "2,0")      // 2 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("1475","8932"), "0,0")      // 0 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("1475","1457"), "2,2")      // 2 bull, 2 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("5686","2436"), "1,0")      // 1 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("4655","6888"), "0,1")      // 0 bull, 1 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("6665","6661"), "3,0")      // 3 bull, 0 pgia
+		.CHECK_OUTPUT(calculateBullAndPgia("6892","0862"), "2,1")      // 2 bull, 1 pgia
 		;
 
 
