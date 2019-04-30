@@ -24,6 +24,4 @@ If the guesser ends his turns before he guessed right - he lost, technical win t
 If the number length of the gusser is not equal to the number length it should be - he lost, technical win to the chooser. \
 If the number length of the chooser is not equal to the number length it should be - he lost, technical win to the guesser.
 
-
-
-
+# Hope you'll enjoy :+1:
