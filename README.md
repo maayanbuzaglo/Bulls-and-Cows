@@ -1,3 +1,7 @@
+## MADE BY: \
+NAHAMA WEILL: 322093311. \
+MAAYAN BUZAGLO: 314882077.
+
 # Bulls and Cows
 
 This project represents a "Bulls and Cows" game.
@@ -25,9 +29,3 @@ If the number length of the gusser is not equal to the number length it should b
 If the number length of the chooser is not equal to the number length it should be - he lost, technical win to the guesser.
 
 # Hope you'll enjoy :+1:
-
-# MADE BY: 
-
-NAHAMA WEILL: 322093311.
-
-MAAYAN BUZAGLO: 314882077.
