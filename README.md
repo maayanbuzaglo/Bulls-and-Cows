@@ -17,3 +17,6 @@ Examples: Suppose that the number we are trying to guess is 1234.
 The player guessed 5167 - he has one bull because the number 1 was in the original number but was not in the right place. \
 The player guessed 1567 - he has one cow because the number 1 is properly positioned and exists in the original number. \
 The player guessed 5678 - he did not have a single bull or cow because the number he had guessed was completely different from the original number.
+
+### Victory:
+Using the various guesses, the guesser is supposed to proceed through trial, error, and reasoning until he succeeds in cracking the opponent's number.
