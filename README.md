@@ -1,10 +1,10 @@
 # Bulls-and-Cows
 
-This project represents a "Bulls and Cows" game. \
+This project represents a "Bulls and Cows" game.
 
 ### The progress of the game:
 
-At the beginning of the game, one player chooses a number of several digits, and the other one needs to guess the number. \
+At the beginning of the game, one player chooses a number of several digits, and the other one needs to guess the number.
 
 The game is played in turns with each player guessing the opponent's number, after guessing the opponent to tell the guesser what his guess is, using clues called bulls and cows. \
 
