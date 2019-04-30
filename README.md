@@ -18,7 +18,7 @@ The player guessed 5167 - he has one bull because the number 1 was in the origin
 The player guessed 1567 - he has one cow because the number 1 is properly positioned and exists in the original number. \
 The player guessed 5678 - he did not have a single bull or cow because the number he had guessed was completely different from the original number.
 
-## Victory:
+#### Victory:
 Using the various guesses, the guesser is supposed to proceed through trials, errors, and reasoning until he succeeds in cracking the opponent's number. \
 If the guesser ends his turns before he guessed right - he lost, technical win to the chooser. \
 If the number length of the gusser is not equal to the number length it should be - he lost, technical win to the chooser. \
