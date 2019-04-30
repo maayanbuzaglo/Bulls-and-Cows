@@ -1,4 +1,4 @@
-# Bulls-and-Cows
+# Bulls and Cows
 
 This project represents a "Bulls and Cows" game.
 
