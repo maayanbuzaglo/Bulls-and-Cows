@@ -25,3 +25,7 @@ If the number length of the gusser is not equal to the number length it should b
 If the number length of the chooser is not equal to the number length it should be - he lost, technical win to the guesser.
 
 # Hope you'll enjoy :+1:
+
+#MADE BY:
+ \מעיין בוזגלו - 314882077
+נעמה וויל - 322093311
