@@ -26,6 +26,6 @@ If the number length of the chooser is not equal to the number length it should 
 
 # Hope you'll enjoy :+1:
 
-#MADE BY:
- \מעיין בוזגלו - 314882077
-נעמה וויל - 322093311
+#Made By:
+NAHAMA WEILL: 322093311.
+MAAYAN BUZAGLO: 314882077.
