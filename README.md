@@ -2,7 +2,7 @@
 
 This project represents a "Bulls and Cows" game. \
 
-### the progress of the game:
+### The progress of the game:
 
 At the beginning of the game, one player chooses a number of several digits, and the other one needs to guess the number. \
 
