@@ -29,7 +29,6 @@ namespace bullpgia
 			this->pgia = 0;
 			this->pgiaPrev = 0;
 			this->length = length;
-			this->guessCode = "1122";
 		}
 
 

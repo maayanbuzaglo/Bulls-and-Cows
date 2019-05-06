@@ -15,11 +15,6 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
     int codeG = 0;
     bool goodCode = true;
 
-    // if (size != guess.length()) // Check if the code is not empty or is the same size of the guess code.
-    // {
-    //     return "";
-    //     // __throw_runtime_error("The code is illegal");
-    // }
 
     for (i = 0; i < size && goodCode && i < guess.length(); i++) // Check if the code is made only by numbers.
     {
@@ -28,12 +23,6 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
         string tempG = "";
         tempC.append(1, choice[i]);
         tempG.append(1, guess[i]);
-        // if (tempG == "*")
-        // {
-        //     goodCode = true;
-        // }
-        // else
-        // {
             codeC = stoi(tempC);
             codeG = stoi(tempG);
             if ((codeC >= 0) && (codeG >= 0))
@@ -41,7 +30,6 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
                 goodCode = true;
             }
 
-        // }
         
     }
 
