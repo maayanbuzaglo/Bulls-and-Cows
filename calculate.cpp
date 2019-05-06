@@ -21,7 +21,7 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
     //     // __throw_runtime_error("The code is illegal");
     // }
 
-    for (i = 0; i < size && goodCode; i++) // Check if the code is made only by numbers.
+    for (i = 0; i < size && goodCode && i < guess.length(); i++) // Check if the code is made only by numbers.
     {
         goodCode = false;
         string tempC = "";
