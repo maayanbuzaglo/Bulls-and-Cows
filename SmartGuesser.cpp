@@ -39,7 +39,51 @@ std::string bullpgia::SmartGuesser::guess()
 
 
 
+if (this->length == 1)
+{
+if (counter == 1)
+	{
+		guessCode = "1";
+		return guessCode;
+	}
+	if (counter == 2)
+	{
+		bullPrev = countBull;
+		guessCode = "2";
+		return guessCode;
+	}
+}
+if (this->length == 2)
+{
+	if (counter == 1)
+	{
+		guessCode = "11";
+		return guessCode;
+	}
+	if (counter == 2)
+	{
+		bullPrev = countBull;
+		guessCode = "21";
+		return guessCode;
+	}
+}
 
+if (this->length == 3)
+{
+	if (counter == 1)
+	{
+		guessCode = "112";
+		return guessCode;
+	}
+	if (counter == 2)
+	{
+		bullPrev = countBull;
+		guessCode = "212";
+		return guessCode;
+	}
+}
+if(this->length == 4)
+{
 	if (counter == 1)
 	{
 		guessCode = "1122";
@@ -51,8 +95,7 @@ std::string bullpgia::SmartGuesser::guess()
 		guessCode = "2122";
 		return guessCode;
 	}
-
-
+}
 
 	if (countBull == bullPrev)
 	{
