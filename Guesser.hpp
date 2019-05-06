@@ -19,6 +19,7 @@ namespace bullpgia
         {
             
         };
+        std::string addOne(string s, int ind);
     };
 
 }

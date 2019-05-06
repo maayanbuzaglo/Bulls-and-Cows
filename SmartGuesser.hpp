@@ -9,10 +9,15 @@ namespace bullpgia
 {
 	class SmartGuesser: public bullpgia::Guesser
 	{
-		string guessCode;
-		
+				
 		public:
 	
+		int bull;
+		int bullPrev;
+		int pgia;
+	    int pgiaPrev;
+		int index;
+
 		SmartGuesser()
 		{
 
