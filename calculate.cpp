@@ -27,12 +27,21 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
         string tempG = "";
         tempC.append(1, choice[i]);
         tempG.append(1, guess[i]);
-        codeC = stoi(tempC);
-        codeG = stoi(tempG);
-        if ((codeC >= 0) && (codeG >= 0))
+        if (tempG == "*")
         {
             goodCode = true;
         }
+        else
+        {
+            codeC = stoi(tempC);
+            codeG = stoi(tempG);
+            if ((codeC >= 0) && (codeG >= 0))
+            {
+                goodCode = true;
+            }
+
+        }
+        
     }
 
     if (!goodCode) // Check if the code is not empty or is the same size of the guess code.

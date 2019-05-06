@@ -9,19 +9,42 @@ namespace bullpgia
 {
 	class SmartGuesser: public bullpgia::Guesser
 	{
+		private:
+		string addOne(string s, int ind);
+		string redOne(string s, int ind);
 				
 		public:
-	
-		int bull;
+
+		int counter;
 		int bullPrev;
 		int pgia;
 	    int pgiaPrev;
 		int index;
+		
+		virtual void startNewGame(uint length) override
+		{
+			this->counter = 0;
+			this->index = 0;
+			this->bullPrev = 0;
+			this->pgia = 0;
+			this->pgiaPrev = 0;
+			this->length = length;
+			if (length > 0)
+			{
+				this->guessCode = "0";
+			}
+			for (int i = 1; i < length; i++)
+			{
+				this->guessCode += "*";
+			}
+		}
+
 
 		SmartGuesser()
 		{
 
 		}
+		~SmartGuesser() {};
 		string guess() override;
 	};
 }
