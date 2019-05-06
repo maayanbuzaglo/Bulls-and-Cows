@@ -27,12 +27,12 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
         string tempG = "";
         tempC.append(1, choice[i]);
         tempG.append(1, guess[i]);
-        if (tempG == "*")
-        {
-            goodCode = true;
-        }
-        else
-        {
+        // if (tempG == "*")
+        // {
+        //     goodCode = true;
+        // }
+        // else
+        // {
             codeC = stoi(tempC);
             codeG = stoi(tempG);
             if ((codeC >= 0) && (codeG >= 0))
@@ -40,7 +40,7 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
                 goodCode = true;
             }
 
-        }
+        // }
         
     }
 

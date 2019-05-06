@@ -29,14 +29,7 @@ namespace bullpgia
 			this->pgia = 0;
 			this->pgiaPrev = 0;
 			this->length = length;
-			if (length > 0)
-			{
-				this->guessCode = "0";
-			}
-			for (int i = 1; i < length; i++)
-			{
-				this->guessCode += "*";
-			}
+			this->guessCode = "1122";
 		}
 
 
