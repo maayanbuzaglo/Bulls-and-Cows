@@ -7,7 +7,7 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
 {
     string tempChoice = choice;
     string tempGuess = guess;
-    int size = choice.size();
+    int size = choice.length();
     int bull = 0, pgia = 0;
     int i, j, index = 0;
     bool flag = false;
@@ -15,7 +15,7 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
     int codeG = 0;
     bool goodCode = true;
 
-    if ((size == 0) || (size != guess.size())) // Check if the code is not empty or is the same size of the guess code.
+    if ((size == 0) || (size != guess.length())) // Check if the code is not empty or is the same size of the guess code.
     {
         return "";
         // __throw_runtime_error("The code is illegal");
