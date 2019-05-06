@@ -15,11 +15,11 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
     int codeG = 0;
     bool goodCode = true;
 
-    if (size != guess.length()) // Check if the code is not empty or is the same size of the guess code.
-    {
-        return "";
-        // __throw_runtime_error("The code is illegal");
-    }
+    // if (size != guess.length()) // Check if the code is not empty or is the same size of the guess code.
+    // {
+    //     return "";
+    //     // __throw_runtime_error("The code is illegal");
+    // }
 
     for (i = 0; i < size && goodCode; i++) // Check if the code is made only by numbers.
     {
