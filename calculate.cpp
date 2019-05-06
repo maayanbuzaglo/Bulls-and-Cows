@@ -17,9 +17,9 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
 
     if ((size == 0) || (size != guess.size())) // Check if the code is not empty or is the same size of the guess code.
     {
-        exit 1;
         // __throw_runtime_error("The code is illegal");
     }
+    else{
 
     for (i = 0; i < size && goodCode; i++) // Check if the code is made only by numbers.
     {
@@ -93,5 +93,6 @@ string bullpgia::calculateBullAndPgia(string choice, string guess)
         }
     }
     string ans = to_string(bull) + "," + to_string(pgia);
+    }
     return ans;
 }
