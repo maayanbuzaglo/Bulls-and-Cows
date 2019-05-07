@@ -3,79 +3,77 @@
 #include <algorithm>
 using namespace std;
 
+/*
+This funcion represents a calculate which compute the number of pgia and the number of bull in our guess.
+*/
 string bullpgia::calculateBullAndPgia(string choice, string guess)
 {
-    string tempChoice = choice;
-    string tempGuess = guess;
-    int size = choice.length();
-    int bull = 0, pgia = 0;
+    string tempChoice = choice; //Temp for the choice.
+    string tempGuess = guess; //Temp for the guess.
+    int size = choice.length(); //The size of the choice.
+    int bull = 0, pgia = 0; //Inits bull and pgia.
     int i, j, index = 0;
-    bool flag = false;
+    bool goodCode = true; //Checks if the code is fine.
+    bool apear = false; //Checks if the temp number apears in the guess.
     int codeC = 0;
     int codeG = 0;
-    bool goodCode = true;
 
-
-    for (i = 0; i < size && goodCode && i < guess.length(); i++) // Check if the code is made only by numbers.
+    for (i = 0; i < size && goodCode && i < guess.length(); i++) //Checks if the code is made only by numbers.
     {
         goodCode = false;
         string tempC = "";
         string tempG = "";
-        tempC.append(1, choice[i]);
-        tempG.append(1, guess[i]);
-            codeC = stoi(tempC);
-            codeG = stoi(tempG);
-            if ((codeC >= 0) && (codeG >= 0))
+        tempC.append(1, choice[i]); //Gets the temp choice.
+        tempG.append(1, guess[i]); //Gets the temp guess.
+            codeC = stoi(tempC); //Changes the choice from string to int.
+            codeG = stoi(tempG); //Changes the guess from string to int.
+            if((codeC >= 0) && (codeG >= 0)) //Checks if the choise and the guess is an integer.
             {
                 goodCode = true;
             }
-
-        
     }
 
-    if (!goodCode) // Check if the code is not empty or is the same size of the guess code.
+    if(!goodCode) //If the code is not an integer.
     {
-        __throw_runtime_error("The code is illegal");
+        __throw_runtime_error("The code is illegal.");
     }
 
-    // for to count the bull.
+    //Counts the bull.
     for (i = 0; i < size; i++)
     {
         char temp = tempChoice[i];
-        if (temp == tempGuess[i]) // check if the is a bull.
+        if (temp == tempGuess[i]) //Checks if there is a bull.
         {
-            bull++;
-            tempChoice[i] = 'x';
-            tempGuess[i] = 'x';
+            bull++; 
+            tempChoice[i] = 'x'; //So it will not use this number again.
+            tempGuess[i] = 'x'; //So it will not use this number again.
         }
-
-
     }
 
-    // for to count the pgia.
+    //Counts the pgia.
     for (i = 0; i < size; i++)
     {
         index = 0;
-        flag = false;
+        apear = false;
         char temp = tempChoice[i];
-        if (temp != 'x')
+        if (temp != 'x') //If we have not check this number.
         {
-            for (j = 0; j < size && !flag; j++)
+            for (j = 0; j < size && !apear; j++)
             {
                 if (temp == tempGuess[j])
                 {
                     pgia++;
-                    flag = true;
+                    apear = true;
                     index = j;
                 }
             }
-            if (!flag) // if the temp number does not appear in the guess, change all this number in the choice to 'x'.
+            if (!apear) //If the temp number does not appear in the guess:
             {
                 replace(tempChoice.begin(), tempChoice.end(), temp, 'x');
             }
             else
             {
-                tempChoice[i] = 'x';
+                tempChoice[i] = 'x'; //Change all this number in the choice to 'x', so we will not check it again.
                 tempGuess[index] = 'x';
             }
         }

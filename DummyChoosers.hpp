@@ -2,7 +2,7 @@
 #include "Chooser.hpp"
 using std::string;
 
-/**
+/*
  * ConstantChooser is a chooser that always chooses the same string.
  */
 class ConstantChooser: public bullpgia::Chooser
@@ -20,7 +20,7 @@ class ConstantChooser: public bullpgia::Chooser
 		}
 };
 
-/**
+/*
  * RandomChooser is a chooser that chooses a random string.
  */
 class RandomChooser: public bullpgia::Chooser
